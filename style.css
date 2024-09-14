@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(214, 233, 249);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 2px #a6eed8;
+    width: 90vw;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(71, 42, 139);
+    font-family:'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+}
+.input-section {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+#taskInp {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid rgb(145, 145, 145);
+    flex: 1;
+}
+
+#add-task {
+    padding: 8px;
+    border-radius: 4px;
+    background-color: rgb(34, 168, 56);
+    color: white;
+    border: none;
+}
+
+#add-task:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+.tasks {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 100%;
+    max-width: 48%;
+}
+.pending {
+    text-align: center;
+    color: rgb(235, 97, 97);
+    margin-bottom: 5px;
+}
+.complete {
+    text-align: center;
+    color: rgb(27, 146, 27);
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #e9ccce;
+    border-radius: 4px;
+    border: 1px solid rgb(188, 188, 188);
+}
+li.completed {
+    background-color: #d4edda;
+    border-radius: 4px;
+    border: 1px solid rgb(188, 188, 188);
+}
+
+li .task-text {
+    flex: 1;
+    padding-right: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="text"].edit-mode {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid rgb(225, 222, 222);
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgb(36, 106, 118);
+    margin-right:10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover{
+    color: rgb(77, 186, 186);
+}
+
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
